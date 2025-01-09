@@ -1,4 +1,5 @@
 @echo off 
+color 80
 set user_profile=%USERPROFILE%
 set dossier_cible=%user_profile%
 echo                                                ##############################
@@ -20,7 +21,7 @@ if %espace% == y goto installeur
 echo creation du dossier racine 
 mkdir "%user_profile%" Jstudio
 mkdir "%user_profile%/Jstudio/app
-
+mkdir %user_profile%/Jstudio/app/cliker
 
 :exit 
 pause
